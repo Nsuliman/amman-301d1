@@ -68,7 +68,7 @@ const multiLiner = word => {
   word = word.toUpperCase();
   return word;
 };
-  
+
 // Done: Uncomment the following line of code to see the output in the browser console
 console.log('Multi-line arrow function:', multiLiner('hello'));
 
@@ -84,8 +84,8 @@ const oldObject = function(array) {
   };
 };
 
-// TODO: Uncomment the following line of code to see the output in the browser console
-// console.log('Hello from the old object function', oldObject(['hi', 'hello', 'are you there?']));
+// Done: Uncomment the following line of code to see the output in the browser console
+console.log('Hello from the old object function', oldObject(['hi', 'hello', 'are you there?']));
 
 
 // STEP 9
