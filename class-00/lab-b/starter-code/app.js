@@ -140,16 +140,23 @@ let objectLit = () => ({
 console.log(objectLit());
 
 
-/*********** Arrow Function  objectLit **************************/  
+/*********** Arrow Function  sumAndProduct **************************/  
 
-let sumAndProduct = function(a, b) {
+// let sumAndProduct = function(a, b) {
+//   let sum = a + b;
+//   let product = a * b;
+//   return [sum, product];
+// };
+
+let sumAndProduct = (a, b) => {
   let sum = a + b;
   let product = a * b;
   return [sum, product];
 };
 
-// TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(sumAndProduct(3, 9));
+
+// Done: Uncomment the following line of code to see the output in the browser console
+console.log(sumAndProduct(3, 9));
 
 
 let message = function(name) {
