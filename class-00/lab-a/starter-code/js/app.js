@@ -22,6 +22,7 @@ function Product(name) {
   this.votes = 0;
   this.views = 0;
   allProducts.push(this);
+  
 }
 
 function makeRandom() {
