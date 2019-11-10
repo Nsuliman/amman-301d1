@@ -108,12 +108,16 @@ console.log('Hello from the new object function', newObject(['hi', 'hello', 'are
 
 
 
-let sum = function(a, b, c, d) {
-  return a + b + c + d;
-};
+// let sum = function(a, b, c, d) {
+//   return a + b + c + d;
+// };
 
-// TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(sum(1, 2, 3, 4));
+/*********** Arrow Function  SUM **************************/  
+
+let sum = (a, b, c, d) =>  a + b + c + d;
+
+// Done: Uncomment the following line of code to see the output in the browser console
+console.log(sum(1, 2, 3, 4));
 
 
 let objectLit = function() {
