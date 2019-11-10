@@ -174,11 +174,6 @@ console.log(message('Allie'));
 
 /*********** Arrow Function  Student  **************************/  
 
-// let Student = function(name, age, hometown) {
-//   this.name = name;
-//   this.age = age;
-//   this.hometown = hometown;
-// };
 
 let Student = function(name, age, hometown) {
   this.name = name;
@@ -210,13 +205,12 @@ console.log(joe.greeting());
 // Done: After viewing the previous console.log(), return the code to a working state.
 
 
+/*********** Arrow Function  courseName  **************************/  
 
-Student.courseName = function() {
-  return 'This student is enrolled in Code 301.';
-};
+Student.courseName = () => 'This student is enrolled in Code 301.';
 
-// TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(Student.courseName());
+// Done: Uncomment the following line of code to see the output in the browser console
+console.log(Student.courseName());
 
 
 
