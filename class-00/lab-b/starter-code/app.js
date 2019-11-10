@@ -107,12 +107,11 @@ console.log('Hello from the new object function', newObject(['hi', 'hello', 'are
 // Write your solutions on a single line wherever possible.
 
 
+/*********** Arrow Function  SUM **************************/  
 
 // let sum = function(a, b, c, d) {
 //   return a + b + c + d;
 // };
-
-/*********** Arrow Function  SUM **************************/  
 
 let sum = (a, b, c, d) =>  a + b + c + d;
 
@@ -120,17 +119,28 @@ let sum = (a, b, c, d) =>  a + b + c + d;
 console.log(sum(1, 2, 3, 4));
 
 
-let objectLit = function() {
-  return {
+/*********** Arrow Function  objectLit **************************/  
+
+// let objectLit = function() {
+//   return {
+//     key1: 'value1',
+//     key2: 'value2',
+//     key3: 'value3',
+//   };
+// };
+
+let objectLit = () => ({
     key1: 'value1',
     key2: 'value2',
     key3: 'value3',
-  };
-};
+});
+
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(objectLit());
+console.log(objectLit());
 
+
+/*********** Arrow Function  objectLit **************************/  
 
 let sumAndProduct = function(a, b) {
   let sum = a + b;
