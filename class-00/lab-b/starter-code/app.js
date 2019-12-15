@@ -113,7 +113,7 @@ console.log('Hello from the new object function', newObject(['hi', 'hello', 'are
 //   return a + b + c + d;
 // };
 
-let sum = (a, b, c, d) =>  a + b + c + d;
+let sum = (a, b, c, d) =>  console.log( ' Summation of 4 numbers is :' , (a + b + c + d));
 
 // Done: Uncomment the following line of code to see the output in the browser console
 console.log(sum(1, 2, 3, 4));
@@ -136,8 +136,8 @@ let objectLit = () => ({
 });
 
 
-// TODO: Uncomment the following line of code to see the output in the browser console
-console.log(objectLit());
+// Done : Uncomment the following line of code to see the output in the browser console
+console.log('objeeeeeeeeeeeeeeeeacts', objectLit());
 
 
 /*********** Arrow Function  sumAndProduct **************************/  
@@ -156,7 +156,7 @@ let sumAndProduct = (a, b) => {
 
 
 // Done: Uncomment the following line of code to see the output in the browser console
-console.log(sumAndProduct(3, 9));
+console.log('sumAndProduct',sumAndProduct(3, 9));
 
 
 /*********** Arrow Function  message  **************************/  
@@ -169,7 +169,7 @@ let message = name => `Hello, ${name}!`;
 
 
 // Done: Uncomment the following line of code to see the output in the browser console
-console.log(message('Allie'));
+console.log('messageeeeeeeeeee',message('Allie'));
 
 
 /*********** Arrow Function  Student  **************************/  
@@ -185,7 +185,7 @@ let joe = new Student('Joe', 'Schmoe', 100);
 
 // Done: Uncomment the following line of code to see the output in the browser console
 // Note that the arrow function will cause this code to break!
-console.log(joe);
+console.log('joeeeeeeeeeeeeeeeeeeee',joe);
 // the constructor function can't convert to arrow function 
 
 // Done: After viewing the previous console.log(), return the code to a working state.
@@ -210,25 +210,25 @@ console.log(joe.greeting());
 Student.courseName = () => 'This student is enrolled in Code 301.';
 
 // Done: Uncomment the following line of code to see the output in the browser console
-console.log(Student.courseName());
+console.log('Student.courseName',Student.courseName());
 
 
 
 // STEP 11
 // How do arrow functions affect constructor functions?
 Student.prototype.scope = function() {
-  console.log(this);
+  console.log('thissssssssssssssssss',this);
 };
 
-// TODO: Uncomment the following line of code to see the output in the browser console
-console.log(joe.scope());
+// Done: Uncomment the following line of code to see the output in the browser console
+console.log('joe.scopeeeeeeeeeeeeeeeeeeee',joe.scope());
 
 Student.prototype.scopeArrow = () => console.log(this);
 
-// TODO: Uncomment the following line of code to see the output in the browser console
-console.log(joe.scopeArrow());
+// Done: Uncomment the following line of code to see the output in the browser console
+console.log('joe.scopeArrowwwwwwwwwwwwwwwwww',joe.scopeArrow());
 
-// TODO: Write a COMMENT below to answer the following questions.
+// Done: Write a COMMENT below to answer the following questions.
 // 1. What is "this" when joe.scope() is invoked?
 // indicate to aparticular object 
 // 2. What is "this" when joe.scopeArrow() is invoked?
