@@ -6,13 +6,13 @@ const leftImage = document.getElementById('left');
 const centerImage = document.getElementById('center');
 const rightImage = document.getElementById('right');
 
-let allProducts = [];
+let allProducts = [];               //  we need to make it let not const coz it will be changed later on 
 const container = document.getElementById('image_container');
 const viewed = [];
 const labels = [];
 const pics = [leftImage, centerImage, rightImage];
 const list = document.getElementById('productlist');
-let totalClicks = 0;
+let totalClicks = 0;                 //  we need to make it let not const coz it will be changed later on 
 const views = [];
 const votes = [];
 
@@ -129,7 +129,7 @@ if(localStorage.busmall){
   allProducts = JSON.parse(localStorage.busmall);
 } else {
   console.log('There is no local storage data; initialize app by creating instances');
-  for(let i = 0; i < names.length; i++) {
+  for(let i = 0; i < names.length; i++) {          //  const not apply on for or while loop  
     new Product(names[i]);
   }
 }
